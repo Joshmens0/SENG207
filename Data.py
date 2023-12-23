@@ -1,9 +1,11 @@
 import pandas as pd 
-import RandomPasswordGenerator as rd
+import RandomPasswordGenerator 
+
+rd=RandomPasswordGenerator.RandomGenerator()
 
 names=["Joshua","Prince","Gabi","Erica","Narkie","Joyce"]
 place=["Teshie","Labadi","Nungua","Bush Road","Kaneshie","Kasoa"]
-number=[rd.RandomGenerator(),rd.RandomGenerator(),rd.RandomGenerator(),rd.RandomGenerator(),rd.RandomGenerator(),rd.RandomGenerator()]
-Dic={'names':names,'place':place,'number':number}
-DataFrame=pd.DataFrame(Dic, columns=["Names","Place","Number"],index=[1,2,3])
+password=[rd,rd,rd,rd,rd,rd]
+Dic={'names':names,'place':place,'passwrd':password}
+DataFrame=pd.DataFrame(Dic)
 print(DataFrame)

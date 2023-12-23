@@ -1,7 +1,7 @@
 import random
 class RandomGenerator: 
     
-    def GenerateRandomPass(self):
+    def __str__(self):
         StringList=['q','w','f','a']
         SymbolList=['@','#','%','$','!']
         RandomString=random.choices(StringList,k=5)
@@ -11,4 +11,3 @@ class RandomGenerator:
         FinalPass=String + Symbol
         self.Password=FinalPass
         return self.Password
-RandomGenerator.GenerateRandomPass
